@@ -1,0 +1,1488 @@
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+base64 (0.2.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          base64
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+benchmark (0.4.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          benchmark
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+bigdecimal (3.1.9), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          bigdecimal
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+concurrent-ruby (1.3.5), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+i18n was resolved to 1.14.7, which
+depends on
+            concurrent-ruby
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+connection_pool (2.5.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          connection_pool
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+drb (2.2.1), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          drb
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+logger (1.6.5), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          logger
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+minitest (5.25.4), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          minitest
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+uri (1.0.2), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+activesupport was resolved to 8.0.1,
+which depends on
+          uri
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+public_suffix (5.1.1), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+github-pages-health-check was resolved to
+1.18.2, which depends on
+octokit was resolved to 4.25.1, which
+depends on
+sawyer was resolved to 0.9.2, which
+depends on
+addressable was resolved to 2.8.7,
+which depends on
+            public_suffix
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+coffee-script-source (1.12.2), and Bundler
+cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-coffeescript was resolved to 1.2.2,
+which depends on
+coffee-script was resolved to 2.4.1,
+which depends on
+        coffee-script-source
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+execjs (2.10.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-coffeescript was resolved to 1.2.2,
+which depends on
+coffee-script was resolved to 2.4.1,
+which depends on
+        execjs
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+commonmarker (0.23.11), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-commonmark-ghpages was resolved to
+0.5.1, which depends on
+jekyll-commonmark was resolved to 1.4.0,
+which depends on
+        commonmarker
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+csv (3.3.2), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        csv
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+simpleidn (0.2.3), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+github-pages-health-check was resolved to
+1.18.2, which depends on
+dnsruby was resolved to 1.72.3, which
+depends on
+        simpleidn
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+ffi (1.17.1), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+github-pages-health-check was resolved to
+1.18.2, which depends on
+typhoeus was resolved to 1.4.1, which
+depends on
+ethon was resolved to 0.16.0, which
+depends on
+          ffi
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+json (2.9.1), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+github-pages-health-check was resolved to
+1.18.2, which depends on
+octokit was resolved to 4.25.1, which
+depends on
+sawyer was resolved to 0.9.2, which
+depends on
+faraday was resolved to 2.12.2,
+which depends on
+            json
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+gemoji (4.1.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jemoji was resolved to 0.13.0, which
+depends on
+      gemoji
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+rb-fsevent (0.11.2), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+jekyll-sass-converter was resolved to
+1.5.2, which depends on
+sass was resolved to 3.7.4, which
+depends on
+sass-listen was resolved to 4.0.0,
+which depends on
+              rb-fsevent
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+rexml (3.4.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+kramdown was resolved to 2.4.0, which
+depends on
+          rexml
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+liquid (4.0.4), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        liquid
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+mercenary (0.3.6), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        mercenary
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+rouge (3.30.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        rouge
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+safe_yaml (1.0.5), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        safe_yaml
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+webrick (1.9.1), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-avatar was resolved to 0.8.0, which
+depends on
+jekyll was resolved to 3.10.0, which
+depends on
+        webrick
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+racc (1.8.1), and Bundler cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-mentions was resolved to 1.6.0,
+which depends on
+html-pipeline was resolved to 2.14.3,
+which depends on
+nokogiri was resolved to 1.18.2, which
+depends on
+          racc
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+jekyll-paginate (1.1.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+    jekyll-paginate
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+rubyzip (2.4.1), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+jekyll-remote-theme was resolved to 0.4.3,
+which depends on
+      rubyzip
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+jekyll-swiss (1.0.0), and Bundler cannot
+continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+    jekyll-swiss
+
+
+Bundler::PermissionError: There was an error
+while trying to write to
+`/var/lib/gems/3.2.0/cache`. It is likely that
+you need to grant write permissions for that
+path.
+[0m 
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:105:in
+`rescue in filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/shared_helpers.rb:102:in
+`filesystem_access'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:440:in
+`fetch_gem'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:427:in
+`fetch_gem_if_possible'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/source/rubygems.rb:161:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:156:in
+`do_install'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/installer/parallel_installer.rb:147:in
+`block in worker_pool'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:62:in
+`apply_func'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`loop'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:54:in
+`process_queue'
+/usr/share/rubygems-integration/all/gems/bundler-2.4.20/lib/bundler/worker.rb:90:in
+`block (2 levels) in create_threads'
+
+[0m[31mAn error occurred while installing
+unicode-display_width (1.8.0), and Bundler
+cannot continue.[0m
+
+In Gemfile:
+github-pages was resolved to 232, which
+depends on
+terminal-table was resolved to 1.8.0,
+which depends on
+      unicode-display_width
