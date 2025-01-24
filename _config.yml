@@ -12,7 +12,7 @@ title                    : "Kunting Qi / Personal Website"
 title_separator          : "-"
 name                     : &name "Kunting Qi"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://qktttt.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "qktttt/qktttt.github.io"
 
