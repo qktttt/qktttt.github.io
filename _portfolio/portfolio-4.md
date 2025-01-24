@@ -26,8 +26,7 @@ The challenge is to achieve this without using ground truth PBR textures, making
 2. **Complex Window Structures**: Unlike symmetrical objects like human faces, windows lack consistent bilateral symmetry, which adds complexity to viewpoint estimation.
 3. **Data Quality Issues**: The collected dataset contains some out-of-domain images, affecting model performance.
 
-*Figure Placeholder: Example of window images with varying complexity and issues like out-of-domain samples.*
-
+![Alt text](/images/window_imgs_complex.png)
 ---
 
 ## Prior Arts
@@ -44,7 +43,7 @@ The challenge is to achieve this without using ground truth PBR textures, making
 - Collected **115,855** high-resolution window images from Flickr.
 - Applied corner-point detection to extract and center individual windows.
 
-*Figure Placeholder: Example showing raw images and processed single-window crops.*
+![Alt text](/images/window_dta.png)
 
 ---
 
@@ -64,8 +63,7 @@ The challenge is to achieve this without using ground truth PBR textures, making
   - **Flip Loss**: Enforces bilateral symmetry for textures.
   - **Smoothness Loss**: Ensures adjacent pixels have similar depth and albedo values.
 
-*Figure Placeholder: Architecture diagram showing the training pipeline with loss functions.*
-
+![Alt text](/images/network.png)
 ---
 
 ## Results
@@ -87,21 +85,19 @@ The challenge is to achieve this without using ground truth PBR textures, making
    - Scale Invariant Depth Error (SIDE): 0.0316
    - Normal Error (MAD): 18.686°
 
-*Figure Placeholder: Table summarizing evaluation metrics for depth and viewpoint estimation.*
-
 ---
 
 ### Qualitative Results
 The model successfully reconstructs canonical textures for most windows. However, limitations are observed under extreme viewpoints and complex structures.
 
-*Figure Placeholder: Examples of reconstructed textures alongside ground truth.*
+![Alt text](/images/good_output_1.png)
 
 ---
 
 ## Limitations
-1. **Out-of-Domain Data**: Presence of non-window images reduces model robustness.
-2. **Viewpoint Accuracy**: Errors in viewpoint estimation propagate to texture maps.
-3. **Limited Texture Detail**: Despite improvements, the resolution remains at 128x128.
+1. **Out-of-Domain Data**: Presence of non-window images reduces model robustness. During the training process, outlier images will negatively affect the fitted model's performance.
+2. **Viewpoint Accuracy**: Errors in viewpoint estimation affects the unsupervised learning of PBR textures from window images.
+3. **Limited Texture Detail**: Despite improvements, the resolution remains at 128x128, which is not sufficient for detailed PBR textures and higher resolutions such as 256x256 may be considered.
 
 ---
 
