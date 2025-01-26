@@ -7,11 +7,11 @@ teammates:
 - Mingshi Cui
 ---
 
-Advised by: Dr. Byran Smucker (Henry Ford Health) and Prof. Sundaramoorthi Durai (Washington University in St. Louis, Olin Business School)
+**Advised by: Dr. Byran Smucker (Henry Ford Health) and Prof. Sundaramoorthi Durai (Washington University in St. Louis, Olin Business School)**
 
-Teammates: Mingshi Cui (Rutgers University)
+**Teammates: Mingshi Cui (Rutgers University)**
 
-Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)
+**Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)**
 
 **Award: Syngenta Corp Challenge 2021, 2nd Prize** 
 

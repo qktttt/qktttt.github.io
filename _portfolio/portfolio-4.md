@@ -4,7 +4,7 @@ excerpt: "Developed an unsupervised framework to estimate PBR texture maps (dept
 collection: portfolio
 ---
 
-Advised by Prof. John Femiani (Miami University， Department of Computer Science)
+**Advised by Prof. John Femiani (Miami University， Department of Computer Science)**
 
 
 ## Problem Statement
