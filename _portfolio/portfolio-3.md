@@ -11,7 +11,7 @@ teammates:
 
 **Teammates: Mingshi Cui (Rutgers University)**
 
-**Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)**
+Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)
 
 **Award: Syngenta Corp Challenge 2021, 2nd Prize** 
 
