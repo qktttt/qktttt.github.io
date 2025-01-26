@@ -13,6 +13,8 @@ Teammates: Mingshi Cui (Rutgers University)
 
 Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)
 
+**Award: Syngenta Corp Challenge 2021, 2nd Prize** 
+
 ## Introduction
 Corn planting and harvesting schedules are essential for managing storage capacity and reducing waste. If planting schedules are not carefully planned, weekly harvest quantities can exceed storage limits, leading to wastage, or fall short, resulting in inefficiencies. The goal of this project is to develop a practical approach for scheduling corn planting that minimizes waste, ensures consistent harvests, and respects storage capacity constraints.
 

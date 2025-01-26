@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Computer Science, University of Illinois Chicago, Aug 2024 - Present
+* Ph.D. in Computer Science, University of Illinois Chicago, Aug 2024 - Present
   * Research areas: HPC, ML4Sys, Sys4ML, Statistical and numerical computing
 * Master of Science in Statistics, Miami University, Aug 2021 - Aug 2024
   * Awarded Full Tuition Scholarship Award (2022-2023)
@@ -95,7 +95,6 @@ Awards
   * Keywords: Optimization, LSTM, Machine Learning
 * **Miami University Undergraduate Summer Research Award (Jul 2019)**
   * Keywords: Computer Vision, Computer Graphics
-
 
 
 Publications
