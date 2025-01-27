@@ -53,6 +53,9 @@ The challenge is to achieve this without using ground truth PBR textures, making
 3. **Uncertainty Map Estimator**: Autoencoder estimating pixel-wise aleatoric uncertainty to make the model robust to outliers.
 4. **Differentiable Renderer**: Combines outputs to reconstruct the original image.
 
+![Alt text](/images/network.png)
+The above figure shows the framework for an unsupervised learning system to estimate 3D properties of windows from input images. It starts with a viewpoint estimator to predict the window's position and orientation, which is used by a differentiable renderer to create a reconstructed view of the window. Several encoder-decoder networks generate key texture maps, including albedo, depth, normal, lighting, and diffuse shading, while a confidence map estimates areas of uncertainty. Horizontal flipping ensures symmetry in the textures, and reconstructed outputs are compared to the input using different loss functions, like photometric loss, perceptual loss, and smoothing losses. These steps help the network learn accurate 3D properties from the images.
+
 ---
 
 ### Training
@@ -63,7 +66,6 @@ The challenge is to achieve this without using ground truth PBR textures, making
   - **Flip Loss**: Enforces bilateral symmetry for textures.
   - **Smoothness Loss**: Ensures adjacent pixels have similar depth and albedo values.
 
-![Alt text](/images/network.png)
 ---
 
 ## Results
@@ -91,6 +93,11 @@ The challenge is to achieve this without using ground truth PBR textures, making
 The model successfully reconstructs canonical textures for most windows. However, limitations are observed under extreme viewpoints and complex structures.
 
 ![Alt text](/images/good_output_1.png)
+
+From the above figure, we can see that our trained model is able to generate accurate and reasonable texture mapping from the input window image. 
+- From the depth map, we can see that shape estimation for window images is correct
+- The normal estimation for the window are correct 
+- The albedo map reflects the true material color of the window images. 
 
 ---
 
