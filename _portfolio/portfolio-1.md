@@ -38,7 +38,7 @@ More details regarding the methodology of Datanugget can be found in [1].
 ## 4. Contribution
 In this project, we developed **Datanugget-Python**, a Python-based implementation optimized for speed and capacity. This version efficiently handles datasets with tens of millions of observations on consumer-grade computers, overcoming the performance limitations of the original R package. 
 
-By leveraging Python’s numerical computing libraries (e.g., `numpy`, `scipy`) and parallel processing tools, the package achieves significant speed improvements while preserving data integrity and statistical properties. 
+By leveraging Python’s numerical computing libraries (e.g., `numpy`, `scipy`) and parallel processing tools, and revising the original Datanugget R package's processing algorithm, the package achieves significant speed improvements while preserving data integrity and statistical properties. 
 
 **Key Results**:  
 1. Achieved an **average speedup of 562.2%** over the original R package. 
