@@ -24,7 +24,7 @@ Education
 Work experience
 ======
 * June 2023 - Present: Research Assistant
-  * Biostatistics Lab at Rutgers University
+  * Biostatistics Lab, Rutgers University
   * Supervisor: Prof. Javier Cabrera
   * Duties include: 
     - Conducting biostatistics researches
