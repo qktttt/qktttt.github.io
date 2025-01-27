@@ -9,6 +9,8 @@ teammates:
 
 **[Link to the visulization portal](https://best-data-visualization.shinyapps.io/niss_visualization/)**
 
+**[Link to the github code repository](https://github.com/qktttt/NISS_data_visualization)**
+
 **Teammates: Mingshi Cui (Rutgers University), Litong Zhang (formerly at Texas A&M University)**
 
 # Report on the Data Visualization
