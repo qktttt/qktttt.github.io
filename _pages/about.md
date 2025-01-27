@@ -12,7 +12,7 @@ redirect_from:
 
 Hi, I’m **Kunting Qi**, a Ph.D. student in **Computer Science** at the **University of Illinois Chicago**. My current research areas are on **Statistical and Numerical Computing**, **High-Performance Computing (HPC)** and **Machine Learning for Systems (ML4Sys)**.
 
-My current researc projects are about the machine learning empowered optimization of non-uniform MPI collective communication algorithms, and parallel statistical computation for large datasets. Check my projects page for more detail if interested. 
+My current research projects are about the machine learning empowered optimization of non-uniform MPI collective communication algorithms, and parallel statistical computation for large datasets. Check my projects page for more detail if interested. 
 
 Before my Ph.D study, I obtained strong foundations in both **Computer Science** and **Statistics** during my dual Master's degrees at **Miami University**. This unique blend of disciplines has equipped me with solid skills and knowledges to address diverse problems—from optimization to statistical modeling and data visualization.
 
