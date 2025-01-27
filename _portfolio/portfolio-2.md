@@ -1,47 +1,64 @@
 ---
-title: "Optimization of Non-uniform MPI Collective Communication with Machine Learning"
-excerpt: "Developing a machine learning-based system to predict and optimize the performance of MPI non-uniform all-to-all communication under various configurations and workloads.  <br/> "
+title: "NISS Data Visualization Contest"
+excerpt: Create an interactive data visualization using R-Shiny for the income data in the U.S., from 1990 to 2019, under different education and gender groups."<br/><img src='/images/niss_visualization.png'>
 collection: portfolio
-advisor: Prof. Sidharth Kumar
+teammates:
+- Mingshi Cui (Rutgers University, Department of Statistics)
+- Litong Zhang 
 ---
 
-**Advised by: Prof. Sidharth Kumar (University of Illinois Chicago, Department of Computer Science)**
+**[Link to the visulization portal](https://best-data-visualization.shinyapps.io/niss_visualization/)**
 
-(In preparation for submitting to IEEE Cluster Conference 2025)
+**Teammates: Mingshi Cui (Rutgers University), Litong Zhang (formerly at Texas A&M University)**
 
-# Performance Optimization of Non-Uniform MPI All-to-All Communication
+# Report on the Data Visualization
 
-## Introduction
-Non-uniform MPI all-to-all communication is when each process sends and receives different amounts of data from other processes, unlike uniform communication where data sizes are the same. It is commonly used in parallel computing, but its performance depends on the workload, algorithms, and settings. There are multiple different algorithms for non-uniform MPI all-to-all communication, and there are numerous parameters need to be specified when using these algorithms. 
+## 1. Topic of the Visualization
+This visualization explores the relationship between **gender, educational attainment, and annual earnings** in the United States from 1990 to 2019. It focuses on income difference between males and females and the impact of different levels of education on earnings.
 
-In parallel applications, data exchange between processes can take a lot of time. Creating a system to choose the best algorithm and settings for this is an ongoing goal. Right now, people rely on fixed rules to pick algorithms and settings, but this approach is not flexible or reliable, especially for non-uniform MPI all-to-all communication.
+---
 
-In this project, we used supervised machine learning to build a system that predicts how well different algorithms perform with different settings for non-uniform MPI all-to-all communication. The system uses these predictions to automatically choose the best algorithm and settings for a given workload. This machine learning approach replaces fixed rules, making the system more flexible and better at handling different workloads and network conditions, which helps improve the performance of parallel applications.
+## 2. Implementation of the Interactive Data Visualization Portal
+The portal was created using **R-shiny** and includes the following features and functionalities:
 
-![Alt text](/images/MPI_nonuniform.png)
-*In real-world parallel applications, the number of elements sent between processes can vary. The time it takes to exchange data between pairs of processes can also differ, and network conditions can add more variation. These factors make MPI all-to-all communication uneven and challenging to optimize.*
+### Accessibility Features:
+- **Colorblind-Friendly Design**:
+  - Avoids problematic color combinations, such as red-green or blue-purple, to ensure accessibility for users with Deuteranopia, Protaniopia, or Tritanopia.
+  - Uses warm, high-contrast color palettes to improve visibility.
 
-## Methodology
-The following figure shows our general workflow for this project. 
-![Alt text](/images/mpi_workflow.png)
+### Interactive Capabilities:
+- Users can interact with plots to:
+  - Click specific data points to view annotations and detailed statistics.
+  - Access summary statistics, such as standard errors, earnings comparisons, or growth rates, depending on the selected plot.
+  - The portal can automatically summarizes and describes the key insights of the currently selected visualization scope in clear sentences, making it easier for users to understand the data.
+- In addition to the main page, there are also additional interactive pages:
+  - **"Compare By Yourself"** section: Allows users to compare earnings by gender and education level at their own interest.
+  - **"Your Earnings Really Grown"** section: Visualizes inflation-adjusted trends and earnings growth over time.
 
-### Benchmarking
-To train a performance prediction model, we conducted extensive benchmarks of MPI non-uniform all-to-all communication under various scenarios. These benchmarks included different combinations of processes, algorithms, and parameter settings. We used the Polaris supercomputer at Argonne National Laboratory (ANL) because it provides a large-scale computing environment, fast interconnects, and reliable hardware. This allowed us to collect accurate data under realistic conditions, which is essential for understanding performance and training predictive models.
+### Design Limitations:
+1. **Resolution Compatibility**:
+   - The portal is optimized for 1920x1080 screen resolution. Other resolutions may result in disorganized layouts.
+   - The portal is not fully compatible with mobile devices.
 
-### Machine Learning Model
-With benchmarked data, we fit machine learning models to predict the performance of MPI non-uniform all-to-all operations. The models take workload and configuration information as input and output predictions of communication time. Several machine learning techniques were evaluated, and the most accurate models were selected for further analysis. To improve the model's accuracy, data preprocessing techniques such as transformation are applied before model fitting.
+2. **Trend Visibility**:
+   - Trends in histogram plots (e.g., number of full-time workers or percentage growth) are sometimes hard to detect due to subtle changes in the data.
+   - A "standard error" button is available to display error bars, but sometimes, depends on data value, ther are small and difficult to notice.
 
-### Optimization Mechanism
-The goal of the optimization mechanism is to leverage the predictive power of the machine learning model to determine optimal configurations for MPI non-uniform all-to-all communication. We are exploring two approaches for this:
-1. **Lookup Table**: Precomputing recommendations for common scenarios to enable fast decision-making during runtime.
-2. **Real-Time Model Integration**: Using the trained machine learning model to provide adaptive recommendations for unseen scenarios.
+---
 
-The created system will be deployed in the real parallel application for real-world evaluation. 
+## 3. Major Findings
+### Gender Disparities:
+- Males consistently earn more than females at all education levels.
+- The largest gender gap occurred in 1990, with males earning $18,310 more than females (adjusted to 2019 dollars).
+- The income gap has decreased slightly but remains significant.
 
-## Results
-Preliminary results show that the machine learning models can accurately predict performance under a variety of scenarios. These predictions form the basis of the proposed optimization mechanism, which is currently under development.
+### Educational Attainment:
+- Higher education levels lead to higher earnings.
+- College serves as a turning point where earnings increase significantly.
+- Males with associate's degrees often earn more than females with bachelor's degrees, highlighting persistent gender inequalities.
 
-## Conclusion
-This project develops a machine learning-driven approach to optimize MPI non-uniform all-to-all communication. By predicting performance and leveraging those predictions to suggest optimal configurations, the proposed system has the potential to significantly improve communication efficiency in parallel computing. Future steps involve refining the optimization mechanism and further validating the system.
+### Inflation-Adjusted Earnings:
+- While earnings in current dollars have increased, inflation-adjusted earnings have remained similar or decreased for lower education levels.
+- Higher education groups (e.g., master's or professional degrees) show real income growth even after accounting for inflation.
 
-
+---

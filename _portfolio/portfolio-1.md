@@ -1,6 +1,8 @@
 ---
 title: "Datanugget - Python version"
-excerpt: "The Datanugget package developed in python, compared to original Datanuget package implemented in R, the capacity and speed are improved by at least 500%<br/><img src='/images/datanugget_teaser.png'>"
+excerpt: "The Datanugget package developed in python, compared to original Datanuget package implemented in R, the capacity and speed are improved by at least 500%<br/>
+<img src='/images/datanugget_teaser.png'>
+(Figure is renferenced from [1])"
 collection: portfolio
 advisor: "Prof. Javier Cabrera"
 ---

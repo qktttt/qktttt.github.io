@@ -1,111 +1,77 @@
 ---
-title: "Automatic PBR Texture Reconstruction for Window Images"
-excerpt: "Developed an unsupervised framework to estimate PBR texture maps (depth, normal, albedo) from real-world window images using viewpoint estimation and differentiable rendering. <br/><img src='/images/pbr_teaser.png'>"
+title: "Multi-Objective Optimization for Corn Planting Scheduling"
+excerpt: "  Optimized corn planting schedules using LSTM-based GDU prediction and multi-objective genetic algorithms to minimize waste and improve harvest consistency. <br/><img src='/images/genetic algorithm.png'>
+(Figure referenced from [2])"
 collection: portfolio
+advisor: Dr. Byran Smucker, Prof. Sundaramoorthi Durai
+teammates: 
+- Mingshi Cui
 ---
 
-**Advised by Prof. John Femiani (Miami University， Department of Computer Science)**
+**Advised by: Dr. Byran Smucker (Henry Ford Health) and Prof. Sundaramoorthi Durai (Washington University in St. Louis, Olin Business School)**
 
+**Teammates: Mingshi Cui (Rutgers University)**
 
-## Problem Statement
+Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)
 
-The goal of this project is to estimate Physically Based Rendering (PBR) materials from window images. Specifically, we aim to generate three canonical texture maps:
-- **Depth Map**: Captures the distance of each part of the window from the camera.
-- **Normal Map**: Represents surface orientations.
-- **Albedo Map**: Encodes surface colors without lighting effects.
+**Award: Syngenta Corp Challenge 2021, 2nd Prize** 
 
-The challenge is to achieve this without using ground truth PBR textures, making it an unsupervised learning problem.
+## Introduction
+Corn planting and harvesting schedules are essential for managing storage capacity and reducing waste. If planting schedules are not carefully planned, weekly harvest quantities can exceed storage limits, leading to wastage, or fall short, resulting in inefficiencies. The goal of this project is to develop a practical approach for scheduling corn planting that minimizes waste, ensures consistent harvests, and respects storage capacity constraints.
 
-![Alt text](/images/pbr_teaser.png)
+![Alt text](/images/corn.jpg "Optional Title")
 
----
+This project builds on the 2021 Syngenta Crop Challenge, which asked participants to design better planting schedules for corn populations. The challenge involved predicting harvest times based on weather data and optimizing planting schedules to address storage limitations. 
 
-## Challenges
+## Background and Problem
+![Alt text](/images/corn_process.png)
 
-1. **Lack of Ground Truth**: Supervised methods require simulated datasets that are time-consuming and resource-intensive to create. Moreover, the domain gap between simulated and real images reduces accuracy.
-2. **Complex Window Structures**: Unlike symmetrical objects like human faces, windows lack consistent bilateral symmetry, which adds complexity to viewpoint estimation.
-3. **Data Quality Issues**: The collected dataset contains some out-of-domain images, affecting model performance.
+A corn seed population has a specific planting window, which defines the earliest and latest dates the seeds can be planted. After planting, the seeds require a certain amount of warmth, measured in Growing Degree Units (GDUs), to fully mature. Once mature, the corn can be harvested, and each seed population produces a certain number of corn ears.
 
-![Alt text](/images/window_imgs_complex.png)
----
+The harvested corn will be stored in a storage facility with limited capacity. If the amount of corn harvested exceeds the storage capacity, the excess will be wasted. Without proper planning, there can be large fluctuations in harvest quantities. As shown in the following figure, sometimes, the harvest greatly exceeds the storage limit and causes wastage, while at other times, the harvest is much smaller than the capacity, leaving storage space unused. This imbalance leads to inefficiencies in both storage usage and harvest management.
 
-## Prior Arts
+![Alt text](/images/original.png)
 
-1. **Supervised Methods**: Use Blender simulations for creating ground truth PBR textures. However, these are computationally expensive and don't generalize well to real-world images.
-2. **Unsup3D**: An unsupervised framework effective for symmetrical objects like human faces but poorly suited for windows due to its reliance on bilateral symmetry assumptions.
-3. **NeRF and EG3D**: Advanced 3D modeling methods that lack the ability to output detailed PBR textures.
+The goal is to decide the exact planting dates for each corn seed population while minimizing the following three objectives at the same time:
 
----
+The largest difference between weekly harvest amounts and storage capacity.
+The median difference between weekly harvest amounts and storage capacity.
+The number of weeks with non-zero harvest amounts.
+To efficiently solve this problem, two key steps are required:
+
+Predicting harvest time: For any given planting date, we need to calculate when the corn will reach maturity. This requires estimating the GDUs for each day to determine when the seed population will have enough warmth to be harvested.
+
+Optimizing planting dates: With thousands of seed populations to manage, we need to find the best planting dates for all of them to minimize the three objectives above.
+
+Minimizing these three objectives will help ensure an efficient harvest while staying within storage limits and spreading out the harvest weeks.
 
 ## Methodology
+1. **Predicting GDUs**:  
+   - Historical weather data from 2009 to 2019 was used to train a Long Short-Term Memory (LSTM) neural network for daily GDU predictions. 
+   - The LSTM model was implemented using Python's Keras library, which provided a flexible and efficient platform for handling time-series data. These predictions allowed us to estimate when each corn population would be ready for harvest.
 
-### Data Collection
-- Collected **115,855** high-resolution window images from Flickr.
-- Applied corner-point detection to extract and center individual windows.
+![Alt text](/images/gdu_prediction.png)
 
-![Alt text](/images/window_dta.png)
+2. **Optimizing Planting Schedules**:  
+   - A genetic algorithm was used to optimize planting dates for over 2,500 corn populations, implemented with the R `nsga2` package. This multi-objective algorithm was used to balance the following goals:
+     - Minimize the median and maximum difference between weekly harvest quantities and storage capacity.
+     - Reduce the number of weeks with non-zero harvests.
+     - Minimize the amount of corn wasted due to exceeding storage limits.
 
----
+   - The algorithm's flexibility allowed us to explore a wide solution space and identify effective planting schedules.
 
-### Model Components
-1. **Viewpoint Estimator**: A modified ResNet-50 pretrained on canonical images to predict rotation and translation.
-2. **Texture Map Estimators**: Autoencoders used to generate depth, normal, and albedo maps.
-3. **Uncertainty Map Estimator**: Autoencoder estimating pixel-wise aleatoric uncertainty to make the model robust to outliers.
-4. **Differentiable Renderer**: Combines outputs to reconstruct the original image.
-
----
-
-### Training
-- Pretrained the ResNet-50 for viewpoint estimation using 500 canonical images with random rotations and translations.
-- Optimized the entire network using multiple loss functions:
-  - **Photometric Loss**: Compares reconstructed images with input images.
-  - **Perceptual Loss**: Captures higher-level feature differences using a pretrained VGG16.
-  - **Flip Loss**: Enforces bilateral symmetry for textures.
-  - **Smoothness Loss**: Ensures adjacent pixels have similar depth and albedo values.
-
-![Alt text](/images/network.png)
----
+3. **Selecting the Best Solution**:  
+Generally, Genetic Algorithm will generate a large number of solutions. Under multiple objectices, some solutions may be better than others on some objectives, and there is no simple best solution. To select the best solution: 
+- we first compute the Pareto front of the solutions, which is a set of solutions that are not dominated by any other solution. 
+- Then we use the hypervolume indicator and TOPSIS method to select the most balance and well-rounded solution from the Pareto front.
 
 ## Results
+The framework was tested on real-world data provided by the Syngenta Crop Challenge. It successfully produced planting schedules that reduced waste, minimized weekly harvest variability, and improved storage efficiency compared to the baseline solutions. The LSTM model implemented in Python accurately predicted GDUs, and the genetic algorithm in R was effective at finding optimized schedules.
 
-### Quantitative Metrics
-1. **Viewpoint Estimation**:
-   - RMSE for rotations and translations shows acceptable accuracy.
+![Alt text](/images/optimized_solution.png)
 
-| Metric                 | RMSE ↓          |
-|------------------------|-----------------|
-| X-axis Rotation (°)    | 3.339           |
-| Y-axis Rotation (°)    | 3.446           |
-| Z-axis Rotation (°)    | 0.652           |
-| X-axis Translation (unit of width) | 0.008 |
-| Y-axis Translation (unit of width) | 0.006 |
 
-2. **Depth Reconstruction** (on Blender-simulated windows):
-   - Mean Absolute Error (MAE): 0.036 (18%)
-   - Scale Invariant Depth Error (SIDE): 0.0316
-   - Normal Error (MAD): 18.686°
+The figure above shows the harvest quantities achieved using our method. Compared to the original approach, our method uses fewer harvest weeks, making the harvest schedule simpler. It also reduces the difference between weekly harvest quantities and storage capacity, both for the largest difference and the median difference. This helps prevent big fluctuations. Additionally, it greatly reduces the amount of corn wasted when the harvest exceeds storage capacity, making the process more efficient overall.
 
----
-
-### Qualitative Results
-The model successfully reconstructs canonical textures for most windows. However, limitations are observed under extreme viewpoints and complex structures.
-
-![Alt text](/images/good_output_1.png)
-
----
-
-## Limitations
-1. **Out-of-Domain Data**: Presence of non-window images reduces model robustness. During the training process, outlier images will negatively affect the fitted model's performance.
-2. **Viewpoint Accuracy**: Errors in viewpoint estimation affects the unsupervised learning of PBR textures from window images.
-3. **Limited Texture Detail**: Despite improvements, the resolution remains at 128x128, which is not sufficient for detailed PBR textures and higher resolutions such as 256x256 may be considered.
-
----
-
-## Future Work
-- Annotate more images to improve viewpoint estimation.
-- Develop methods for filtering out-of-domain samples during preprocessing.
-- Explore advanced differentiable renderers and generative models for enhanced texture reconstruction.
-
----
-
-Thank you for exploring this project! If you'd like to see more, check out my [portfolio page](/portfolio).
+## Conclusion
+This project provides a straightforward and practical method for optimizing corn planting schedules. By combining predictive modeling using LSTM and optimization techniques implemented in R, it addresses key challenges like inconsistent harvests and storage constraints. The approach can also be applied to similar agricultural scheduling problems, making it a useful tool for improving resource management and reducing waste.

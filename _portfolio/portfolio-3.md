@@ -1,76 +1,46 @@
 ---
-title: "Multi-Objective Optimization for Corn Planting Scheduling"
-excerpt: "  Optimized corn planting schedules using LSTM-based GDU prediction and multi-objective genetic algorithms to minimize waste and improve harvest consistency. <br/><img src='/images/genetic algorithm.png'>"
+title: "Optimization of Non-uniform MPI Collective Communication with Machine Learning"
+excerpt: "Developing a machine learning-based system to predict and optimize the performance of MPI non-uniform all-to-all communication under various configurations and workloads.<br/>
+<img src='/images/MPI_nonuniform.png'>"
 collection: portfolio
-advisor: Dr. Byran Smucker, Prof. Sundaramoorthi Durai
-teammates: 
-- Mingshi Cui
+advisor: Prof. Sidharth Kumar
 ---
 
-**Advised by: Dr. Byran Smucker (Henry Ford Health) and Prof. Sundaramoorthi Durai (Washington University in St. Louis, Olin Business School)**
+**Advised by: Prof. Sidharth Kumar (University of Illinois Chicago, Department of Computer Science)**
 
-**Teammates: Mingshi Cui (Rutgers University)**
-
-Submitted Paper: [A Multi-Objective Capacity-Constrained Optimization of Corn Planting Scheduling](https://sites.miamioh.edu/byran-smucker/files/2024/05/Corn_Planting_Optimization_JORS.pdf)
-
-**Award: Syngenta Corp Challenge 2021, 2nd Prize** 
+(In preparation for submitting to IEEE Cluster Conference 2025)
 
 ## Introduction
-Corn planting and harvesting schedules are essential for managing storage capacity and reducing waste. If planting schedules are not carefully planned, weekly harvest quantities can exceed storage limits, leading to wastage, or fall short, resulting in inefficiencies. The goal of this project is to develop a practical approach for scheduling corn planting that minimizes waste, ensures consistent harvests, and respects storage capacity constraints.
+Non-uniform MPI all-to-all communication is when each process sends and receives different amounts of data from other processes, unlike uniform communication where data sizes are the same. It is commonly used in parallel computing, but its performance depends on the workload, algorithms, and settings. There are multiple different algorithms for non-uniform MPI all-to-all communication, and there are numerous parameters need to be specified when using these algorithms. 
 
-![Alt text](/images/corn.jpg "Optional Title")
+In parallel applications, data exchange between processes can take a lot of time. Creating a system to choose the best algorithm and settings for this is an ongoing goal. Right now, people rely on fixed rules to pick algorithms and settings, but this approach is not flexible or reliable, especially for non-uniform MPI all-to-all communication.
 
-This project builds on the 2021 Syngenta Crop Challenge, which asked participants to design better planting schedules for corn populations. The challenge involved predicting harvest times based on weather data and optimizing planting schedules to address storage limitations. 
+In this project, we used supervised machine learning to build a system that predicts how well different algorithms perform with different settings for non-uniform MPI all-to-all communication. The system uses these predictions to automatically choose the best algorithm and settings for a given workload. This machine learning approach replaces fixed rules, making the system more flexible and better at handling different workloads and network conditions, which helps improve the performance of parallel applications.
 
-## Background and Problem
-![Alt text](/images/corn_process.png)
-
-A corn seed population has a specific planting window, which defines the earliest and latest dates the seeds can be planted. After planting, the seeds require a certain amount of warmth, measured in Growing Degree Units (GDUs), to fully mature. Once mature, the corn can be harvested, and each seed population produces a certain number of corn ears.
-
-The harvested corn will be stored in a storage facility with limited capacity. If the amount of corn harvested exceeds the storage capacity, the excess will be wasted. Without proper planning, there can be large fluctuations in harvest quantities. As shown in the following figure, sometimes, the harvest greatly exceeds the storage limit and causes wastage, while at other times, the harvest is much smaller than the capacity, leaving storage space unused. This imbalance leads to inefficiencies in both storage usage and harvest management.
-
-![Alt text](/images/original.png)
-
-The goal is to decide the exact planting dates for each corn seed population while minimizing the following three objectives at the same time:
-
-The largest difference between weekly harvest amounts and storage capacity.
-The median difference between weekly harvest amounts and storage capacity.
-The number of weeks with non-zero harvest amounts.
-To efficiently solve this problem, two key steps are required:
-
-Predicting harvest time: For any given planting date, we need to calculate when the corn will reach maturity. This requires estimating the GDUs for each day to determine when the seed population will have enough warmth to be harvested.
-
-Optimizing planting dates: With thousands of seed populations to manage, we need to find the best planting dates for all of them to minimize the three objectives above.
-
-Minimizing these three objectives will help ensure an efficient harvest while staying within storage limits and spreading out the harvest weeks.
+![Alt text](/images/MPI_nonuniform.png)
+*In real-world parallel applications, the number of elements sent between processes can vary, as visualized in the figure above. The time it takes to exchange data between pairs of processes can also differ, and network conditions can add more variation. These factors make MPI all-to-all communication uneven and challenging to optimize.*
 
 ## Methodology
-1. **Predicting GDUs**:  
-   - Historical weather data from 2009 to 2019 was used to train a Long Short-Term Memory (LSTM) neural network for daily GDU predictions. 
-   - The LSTM model was implemented using Python's Keras library, which provided a flexible and efficient platform for handling time-series data. These predictions allowed us to estimate when each corn population would be ready for harvest.
+The following figure shows our general workflow for this project. 
+![Alt text](/images/mpi_workflow.png)
 
-![Alt text](/images/gdu_prediction.png)
+### Benchmarking
+To train a performance prediction model, we conducted extensive benchmarks of MPI non-uniform all-to-all communication under various scenarios. These benchmarks included different combinations of processes, algorithms, and parameter settings. We used the Polaris supercomputer at Argonne National Laboratory (ANL) because it provides a large-scale computing environment, fast interconnects, and reliable hardware. This allowed us to collect accurate data under realistic conditions, which is essential for understanding performance and training predictive models.
 
-2. **Optimizing Planting Schedules**:  
-   - A genetic algorithm was used to optimize planting dates for over 2,500 corn populations, implemented with the R `nsga2` package. This multi-objective algorithm was used to balance the following goals:
-     - Minimize the median and maximum difference between weekly harvest quantities and storage capacity.
-     - Reduce the number of weeks with non-zero harvests.
-     - Minimize the amount of corn wasted due to exceeding storage limits.
+### Machine Learning Model
+With benchmarked data, we fit machine learning models to predict the performance of MPI non-uniform all-to-all operations. The models take workload and configuration information as input and output predictions of communication time. Several machine learning techniques were evaluated, and the most accurate models were selected for further analysis. To improve the model's accuracy, data preprocessing techniques such as transformation are applied before model fitting.
 
-   - The algorithm's flexibility allowed us to explore a wide solution space and identify effective planting schedules.
+### Optimization Mechanism
+The goal of the optimization mechanism is to leverage the predictive power of the machine learning model to determine optimal configurations for MPI non-uniform all-to-all communication. We are exploring two approaches for this:
+1. **Lookup Table**: Precomputing recommendations for common scenarios to enable fast decision-making during runtime.
+2. **Real-Time Model Integration**: Using the trained machine learning model to provide adaptive recommendations for unseen scenarios.
 
-3. **Selecting the Best Solution**:  
-Generally, Genetic Algorithm will generate a large number of solutions. Under multiple objectices, some solutions may be better than others on some objectives, and there is no simple best solution. To select the best solution: 
-- we first compute the Pareto front of the solutions, which is a set of solutions that are not dominated by any other solution. 
-- Then we use the hypervolume indicator and TOPSIS method to select the most balance and well-rounded solution from the Pareto front.
+The created system will be deployed in the real parallel application for real-world evaluation. 
 
 ## Results
-The framework was tested on real-world data provided by the Syngenta Crop Challenge. It successfully produced planting schedules that reduced waste, minimized weekly harvest variability, and improved storage efficiency compared to the baseline solutions. The LSTM model implemented in Python accurately predicted GDUs, and the genetic algorithm in R was effective at finding optimized schedules.
-
-![Alt text](/images/optimized_solution.png)
-
-
-The figure above shows the harvest quantities achieved using our method. Compared to the original approach, our method uses fewer harvest weeks, making the harvest schedule simpler. It also reduces the difference between weekly harvest quantities and storage capacity, both for the largest difference and the median difference. This helps prevent big fluctuations. Additionally, it greatly reduces the amount of corn wasted when the harvest exceeds storage capacity, making the process more efficient overall.
+Preliminary results show that the machine learning models can accurately predict performance under a variety of scenarios. These predictions form the basis of the proposed optimization mechanism, which is currently under development.
 
 ## Conclusion
-This project provides a straightforward and practical method for optimizing corn planting schedules. By combining predictive modeling using LSTM and optimization techniques implemented in R, it addresses key challenges like inconsistent harvests and storage constraints. The approach can also be applied to similar agricultural scheduling problems, making it a useful tool for improving resource management and reducing waste.
+This project develops a machine learning-driven approach to optimize MPI non-uniform all-to-all communication. By predicting performance and leveraging those predictions to suggest optimal configurations, the proposed system has the potential to significantly improve communication efficiency in parallel computing. Future steps involve refining the optimization mechanism and further validating the system.
+
+
