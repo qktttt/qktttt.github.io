@@ -26,7 +26,8 @@ Work experience
 * June 2023 - Present: Research Assistant
   * Biostatistics Lab, supervisor： Prof. Javier Cabrera 
   * Duties include: 
-    - Conducting biostatistic researches 
+    - Conducting biostatistics researches
+    - Performing data visualizatoin and statistical analysis on biostatistics data 
     - Developing Datanugget Python version package to improve its efficiency and capacity
     - [Datanugget - Python Version](/portfolio/portfolio-1/)
 
