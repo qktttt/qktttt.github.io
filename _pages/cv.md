@@ -24,7 +24,7 @@ Education
 Work experience
 ======
 * June 2023 - Present: Research Assistant
-  * Biostatistics Lab, supervisor： Prof. Javier Cabrera 
+  * Biostatistics Lab, supervisor: Prof. Javier Cabrera 
   * Duties include: 
     - Conducting biostatistics researches
     - Performing data visualizatoin and statistical analysis on biostatistics data 
