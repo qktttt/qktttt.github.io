@@ -18,12 +18,12 @@ In parallel applications, data exchange between processes can take a lot of time
 
 In this project, we used supervised machine learning to build a system that predicts how well different algorithms perform with different settings for non-uniform MPI all-to-all communication. The system uses these predictions to automatically choose the best algorithm and settings for a given workload. This machine learning approach replaces fixed rules, making the system more flexible and better at handling different workloads and network conditions, which helps improve the performance of parallel applications.
 
-![Alt text](images/MPI_nonuniform.png)
+![Alt text](/images/MPI_nonuniform.png)
 *In real-world parallel applications, the number of elements sent between processes can vary. The time it takes to exchange data between pairs of processes can also differ, and network conditions can add more variation. These factors make MPI all-to-all communication uneven and challenging to optimize.*
 
 ## Methodology
-The figure as shown in the following show our general workflow for this project. 
-![Alt text](images/mpi_workflow.png)
+The following figure shows our general workflow for this project. 
+![Alt text](/images/mpi_workflow.png)
 
 ### Benchmarking
 To train a performance prediction model, we conducted extensive benchmarks of MPI non-uniform all-to-all communication under various scenarios. These benchmarks included different combinations of processes, algorithms, and parameter settings. We used the Polaris supercomputer at Argonne National Laboratory (ANL) because it provides a large-scale computing environment, fast interconnects, and reliable hardware. This allowed us to collect accurate data under realistic conditions, which is essential for understanding performance and training predictive models.
@@ -44,4 +44,4 @@ Preliminary results show that the machine learning models can accurately predict
 ## Conclusion
 This project develops a machine learning-driven approach to optimize MPI non-uniform all-to-all communication. By predicting performance and leveraging those predictions to suggest optimal configurations, the proposed system has the potential to significantly improve communication efficiency in parallel computing. Future steps involve refining the optimization mechanism and further validating the system.
 
-****
+

@@ -5,7 +5,7 @@ collection: portfolio
 advisor: "Prof. Javier Cabrera"
 ---
 
-Advised by: Prof. Javier Cabrera (Rutgers University, Department of Statistics)
+**Advised by: Prof. Javier Cabrera (Rutgers University, Department of Statistics)**
 
 Large datasets with millions of observations present significant challenges for analysis, as traditional methods require substantial computational resources and memory. Techniques like clustering or PCA often become impractical due to their high time and space complexity, particularly with high-dimensional data. Random sampling is a common approach to reduce dataset size but frequently results in the loss of critical information, such as small clusters or edge patterns, while introducing high variability in outcomes. Therefore, a method that provides both computational efficiency with the preservation of essential information is highly needed.
 
