@@ -23,6 +23,13 @@ Education
 
 Work experience
 ======
+* June 2023 - Present: Research Assistant
+  * Biostatistics Lab, supervisor： Prof. Javier Cabrera 
+  * Duties include: 
+    - Conducting biostatistic researches 
+    - Developing Datanugget Python version package to improve its efficiency and capacity
+    - [Datanugget - Python Version](/portfolio/)
+
 * Jul 2023 - Aug 2024: Statistician - Graduate Assistant
   * Miami University Discovery Center
   * Duties included:
