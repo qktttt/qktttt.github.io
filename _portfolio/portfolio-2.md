@@ -1,6 +1,6 @@
 ---
 title: "NISS Data Visualization Contest"
-excerpt: Create an interactive data visualization using R-Shiny for the income data in the U.S., from 1990 to 2019, under different education and gender groups."<br/><img src='/images/niss_visualization.png'>
+excerpt: "Create an interactive data visualization using R-Shiny for the income data in the U.S., from 1990 to 2019, under different education and gender groups.<br/><img src='/images/niss_visualization.png'>"
 collection: portfolio
 teammates:
 - Mingshi Cui (Rutgers University, Department of Statistics)
