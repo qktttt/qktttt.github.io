@@ -29,11 +29,10 @@ The goal is to reduce a large dataset into smaller, representative units called 
 **Nugget Refinement Phase**  
 The initial nuggets are refined by splitting oversized or high-variability nuggets to improve granularity and structural accuracy. 
 
+More details regarding the methodology of Datanugget can be found in [1].
 
 ## 3. Challenge
 The Datanugget R package, while effective in reducing datasets and preserving structural properties, faces limitations in speed and capacity when processing extremely large datasets (e.g., millions of observations). On consumer-grade hardware, execution can become prohibitively slow or fail due to memory constraints. These limitations stem from the computational overhead of partitioning large datasets into nuggets, which scales poorly with dataset size. 
-
-More details regarding the methodology of Datanugget can be found in [1].
 
 ## 4. Contribution
 In this project, we developed **Datanugget-Python**, a Python-based implementation optimized for speed and capacity. This version efficiently handles datasets with tens of millions of observations on consumer-grade computers, overcoming the performance limitations of the original R package. 
