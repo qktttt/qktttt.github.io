@@ -28,7 +28,7 @@ Work experience
   * Duties include: 
     - Conducting biostatistic researches 
     - Developing Datanugget Python version package to improve its efficiency and capacity
-    - [Datanugget - Python Version](/portfolio/)
+    - [Datanugget - Python Version](/portfolio/portfolio-1/)
 
 * Jul 2023 - Aug 2024: Statistician - Graduate Assistant
   * Miami University Discovery Center
