@@ -51,6 +51,7 @@ Minimizing these three objectives will help ensure an efficient harvest while st
    - The LSTM model was implemented using Python's Keras library, which provided a flexible and efficient platform for handling time-series data. These predictions allowed us to estimate when each corn population would be ready for harvest.
 
 ![Alt text](/images/gdu_prediction.png)
+*The above fiture shows the daily GDU unit over a site over years 2008-2022. The green lines shows our LSTM prediction for daily GDU for 2020-2022, we can see our prediction accurately capture the seasonality of the data, and produce reasonable estimation for daily GDU.*
 
 2. **Optimizing Planting Schedules**:  
    - A genetic algorithm was used to optimize planting dates for over 2,500 corn populations, implemented with the R `nsga2` package. This multi-objective algorithm was used to balance the following goals:
