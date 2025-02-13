@@ -1,46 +1,52 @@
 ---
-title: "Optimization of Non-uniform MPI Collective Communication with Machine Learning"
-excerpt: "Developing a machine learning-based system to predict and optimize the performance of MPI non-uniform all-to-all communication under various configurations and workloads.<br/>
-<img src='/images/MPI_nonuniform.png'>"
+title: "Datanugget - Python Version"  
+excerpt: "The Python implementation of the Datanugget package, achieving at least a 500% improvement in speed and capacity compared to the original R version.<br/> 
+<img src='/images/datanugget_teaser.png'> 
+*(Figure adapted from [1])*" 
 collection: portfolio
-advisor: Prof. Sidharth Kumar
+advisor: "Prof. Javier Cabrera"
 ---
 
-**Advised by: Prof. Sidharth Kumar (University of Illinois Chicago, Department of Computer Science)**
+**Advised by: Prof. Javier Cabrera (Rutgers University, Department of Statistics)** 
 
-(In preparation for submitting to IEEE Cluster Conference 2025)
+## 1. Introduction
+Large datasets with millions of observations pose significant challenges for analysis, as traditional methods require substantial computational resources and memory. Techniques like clustering or PCA often become impractical due to their high time and space complexity, particularly with high-dimensional data. Random sampling is a common approach to reduce dataset size, but it often leads to the loss of critical information, such as small clusters or edge patterns, while introducing high variability in outcomes. Thus, a method that balances computational efficiency with the preservation of essential information is critically needed. 
 
-## Introduction
-Non-uniform MPI all-to-all communication is when each process sends and receives different amounts of data from other processes, unlike uniform communication where data sizes are the same. It is commonly used in parallel computing, but its performance depends on the workload, algorithms, and settings. There are multiple different algorithms for non-uniform MPI all-to-all communication, and there are numerous parameters need to be specified when using these algorithms. 
+## 2. Background
+The **Datanugget** R package [2] efficiently represents large datasets while preserving their structural and statistical properties by partitioning the data into smaller, weighted units called **data nuggets**. Each nugget represents a cluster of observations with similar characteristics and is characterized by three key attributes: **center**, **weight**, and **scale**, which collectively capture the variability and distribution of the data [1].
 
-In parallel applications, data exchange between processes can take a lot of time. Creating a system to choose the best algorithm and settings for this is an ongoing goal. Right now, people rely on fixed rules to pick algorithms and settings, but this approach is not flexible or reliable, especially for non-uniform MPI all-to-all communication.
+The Datanugget package reduces large datasets into a manageable number of nuggets, enabling the application of weighted statistical methods and modeling directly on the summarized data. These methods include unsupervised approaches (e.g., weighted PCA, weighted clustering) and supervised methods (e.g., generalized linear models, linear regression). 
 
-In this project, we used supervised machine learning to build a system that predicts how well different algorithms perform with different settings for non-uniform MPI all-to-all communication. The system uses these predictions to automatically choose the best algorithm and settings for a given workload. This machine learning approach replaces fixed rules, making the system more flexible and better at handling different workloads and network conditions, which helps improve the performance of parallel applications.
+![Data Nugget Workflow](/images/datanugget_teaser.png "Data Nugget Creation and Refinement (Adapted from [1])")  
+*The workflow involves two phases: nugget creation and refinement ([1]).* 
 
-![Alt text](/images/MPI_nonuniform.png)
-*In real-world parallel applications, the number of elements sent between processes can vary, as visualized in the figure above. The time it takes to exchange data between pairs of processes can also differ, and network conditions can add more variation. These factors make MPI all-to-all communication uneven and challenging to optimize.*
+**Nugget Creation Phase**  
+The goal is to reduce a large dataset into smaller, representative units called nuggets. Each nugget summarizes a subset of the data using three properties:  
+1. **Center**: The central point of the subset (e.g., mean or centroid).  
+2. **Weight**: The number of original observations in the nugget.  
+3. **Scale**: The variability or spread within the nugget.  
 
-## Methodology
-The following figure shows our general workflow for this project. 
-![Alt text](/images/mpi_workflow.png)
+**Nugget Refinement Phase**  
+The initial nuggets are refined by splitting oversized or high-variability nuggets to improve granularity and structural accuracy. 
 
-### Benchmarking
-To train a performance prediction model, we conducted extensive benchmarks of MPI non-uniform all-to-all communication under various scenarios. These benchmarks included different combinations of processes, algorithms, and parameter settings. We used the Polaris supercomputer at Argonne National Laboratory (ANL) because it provides a large-scale computing environment, fast interconnects, and reliable hardware. This allowed us to collect accurate data under realistic conditions, which is essential for understanding performance and training predictive models.
+More details regarding the methodology of Datanugget can be found in [1].
 
-### Machine Learning Model
-With benchmarked data, we fit machine learning models to predict the performance of MPI non-uniform all-to-all operations. The models take workload and configuration information as input and output predictions of communication time. Several machine learning techniques were evaluated, and the most accurate models were selected for further analysis. To improve the model's accuracy, data preprocessing techniques such as transformation are applied before model fitting.
+## 3. Challenge
+The Datanugget R package, while effective in reducing datasets and preserving structural properties, faces limitations in speed and capacity when processing extremely large datasets (e.g., millions of observations). On consumer-grade hardware, execution can become prohibitively slow or fail due to memory constraints. These limitations stem from the computational overhead of partitioning large datasets into nuggets, which scales poorly with dataset size. 
 
-### Optimization Mechanism
-The goal of the optimization mechanism is to leverage the predictive power of the machine learning model to determine optimal configurations for MPI non-uniform all-to-all communication. We are exploring two approaches for this:
-1. **Lookup Table**: Precomputing recommendations for common scenarios to enable fast decision-making during runtime.
-2. **Real-Time Model Integration**: Using the trained machine learning model to provide adaptive recommendations for unseen scenarios.
+## 4. Contribution
+In this project, we developed **Datanugget-Python**, a Python-based implementation optimized for speed and capacity. This version efficiently handles datasets with tens of millions of observations on consumer-grade computers, overcoming the performance limitations of the original R package. 
 
-The created system will be deployed in the real parallel application for real-world evaluation. 
+By leveraging Python’s numerical computing libraries (e.g., `numpy`, `scipy`) and parallel processing tools, and revising the original Datanugget R package's processing algorithm, the package achieves significant speed improvements while preserving data integrity and statistical properties. 
 
-## Results
-Preliminary results show that the machine learning models can accurately predict performance under a variety of scenarios. These predictions form the basis of the proposed optimization mechanism, which is currently under development.
+**Key Results**:  
+1. Achieved an **average speedup of 562.2%** over the original R package. 
+2. Successfully processed **50 million observations with 10 variables** on a desktop computer with 32 GB RAM. 
 
-## Conclusion
-This project develops a machine learning-driven approach to optimize MPI non-uniform all-to-all communication. By predicting performance and leveraging those predictions to suggest optimal configurations, the proposed system has the potential to significantly improve communication efficiency in parallel computing. Future steps involve refining the optimization mechanism and further validating the system.
+**A ready-to-use Python package, demos, and documentation will be released soon.** 
 
+---
 
+### References  
+1. Beavers, Traymon E., et al. "Data Nuggets: A Method for Reducing Big Data While Preserving Data Structure." *Journal of Computational and Graphical Statistics* (2024): 1–21.  
+2. Beavers T, Cabrera J, Cheng G, Qi K, Lubomirski M (2024). *datanugget: Create and Refine Data Nuggets*. R package version 1.3.1. Available at: [https://CRAN.R-project.org/package=datanugget](https://CRAN.R-project.org/package=datanugget).
