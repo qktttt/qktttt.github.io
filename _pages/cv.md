@@ -23,7 +23,15 @@ Education
 
 Work experience
 ======
-* June 2023 - Present: Research Assistant
+* June 2023 - Aug 2024: Research Assistant
+  * Department of Computer Science, University of Illinois Chicago
+  * Supervisor: Prof. Sidharth Kumar
+  * Duties include: 
+    - Performing research on ML-based tuning for MPI collective algorithms
+    - Performing research on the analysis and classification of fMRI brain topology data
+
+
+* June 2023 - Aug 2024: Research Assistant
   * Biostatistics Lab, Rutgers University
   * Supervisor: Prof. Javier Cabrera
   * Duties include: 
