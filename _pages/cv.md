@@ -22,7 +22,7 @@ Education
   * Graduated Cum Laude
 
 Work experience
-======
+====== 
 * June 2023 - Present: Research Assistant
   * Biostatistics Lab, Rutgers University
   * Supervisor: Prof. Javier Cabrera
