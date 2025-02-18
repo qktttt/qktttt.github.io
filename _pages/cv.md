@@ -30,7 +30,6 @@ Work experience
     - Performing research on ML-based tuning for MPI collective algorithms
     - Performing research on the analysis and classification of fMRI brain topology data
 
-
 * June 2023 - Present: Research Assistant
   * Biostatistics Lab, Rutgers University
   * Supervisor: Prof. Javier Cabrera
