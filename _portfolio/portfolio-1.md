@@ -8,8 +8,6 @@ advisor: Prof. Sidharth Kumar
 
 **Advised by: Prof. Sidharth Kumar (University of Illinois Chicago, Department of Computer Science)**
 
-(In preparation for submitting to IEEE Cluster Conference 2025)
-
 ## Introduction
 Non-uniform MPI all-to-all communication is when each process sends and receives different amounts of data from other processes, unlike uniform communication where data sizes are the same. It is commonly used in parallel computing, but its performance depends on the workload, algorithms, and settings. There are multiple different algorithms for non-uniform MPI all-to-all communication, and there are numerous parameters need to be specified when using these algorithms. 
 
