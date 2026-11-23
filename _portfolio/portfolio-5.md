@@ -2,6 +2,7 @@
 title: "Automatic PBR Texture Reconstruction for Window Images"
 excerpt: "Developed an unsupervised framework to estimate PBR texture maps (depth, normal, albedo) from real-world window images using viewpoint estimation and differentiable rendering. <br/><img src='/images/pbr_teaser.png'>"
 collection: portfolio
+stage: pre-phd
 ---
 
 **Advised by Prof. John Femiani (Miami University， Department of Computer Science)**

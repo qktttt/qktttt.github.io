@@ -3,6 +3,7 @@ title: "Multi-Objective Optimization for Corn Planting Scheduling"
 excerpt: "  Optimized corn planting schedules using LSTM-based GDU prediction and multi-objective genetic algorithms to minimize waste and improve harvest consistency. <br/><img src='/images/genetic algorithm.png'>
 (Figure referenced from [2])"
 collection: portfolio
+stage: pre-phd
 advisor: Dr. Byran Smucker, Prof. Sundaramoorthi Durai
 teammates: 
 - Mingshi Cui

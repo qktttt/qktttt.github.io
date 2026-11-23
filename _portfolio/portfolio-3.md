@@ -4,6 +4,7 @@ excerpt: "The Python implementation of the Datanugget package, achieving at leas
 <img src='/images/datanugget_teaser.png'> 
 *(Figure adapted from [1])*" 
 collection: portfolio
+stage: pre-phd
 advisor: "Prof. Javier Cabrera"
 ---
 
