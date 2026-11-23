@@ -116,4 +116,4 @@ From the above figure, we can see that our trained model is able to generate acc
 
 ---
 
-Thank you for exploring this project! If you'd like to see more, check out my [portfolio page](/portfolio).
+Thank you for exploring this project! If you'd like to see more, check out my [pre-PhD projects](/pre-phd/).
