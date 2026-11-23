@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Résumé (PDF)](/files/Kunting_Qi_Resume_HPC.pdf)
+
 Education
 ======
 * Ph.D. in Computer Science, University of Illinois Chicago, Aug 2024 - Present

@@ -10,6 +10,8 @@ redirect_from:
 
 I’m a PhD student in computer science at the University of Illinois Chicago, advised by Prof. Sidharth Kumar. I work on high-performance computing and distributed systems, with a focus on GPU communication and MPI collectives. I build and benchmark communication algorithms for workloads where the amount of data moving between processors changes from one iteration to the next.
 
+[Résumé (PDF)](/files/Kunting_Qi_Resume_HPC.pdf)
+
 ## GPU communication and query engines
 
 I’m developing GATAv, a CUDA and SYCL implementation of variable-size all-to-all communication for GPU clusters. On Argonne’s Polaris and Aurora supercomputers, I study how GPUs can exchange the tokens that a mixture-of-experts model routes to different experts. I also integrate the collective into vLLM to measure its effect on DeepSeek-R1 decoding. [GATAv project, figures, and slides](/portfolio/gpu-alltoallv/)
