@@ -17,7 +17,10 @@ The goal of this project is to estimate Physically Based Rendering (PBR) materia
 
 The challenge is to achieve this without using ground truth PBR textures, making it an unsupervised learning problem.
 
-![Alt text](/images/pbr_teaser.png)
+<figure>
+  <img src="/images/pbr_teaser.png" alt="A window represented by albedo, ambient occlusion, displacement, normal, and roughness maps.">
+  <figcaption>These maps illustrate how a renderer can describe one façade. The project estimates albedo, depth, and surface normals from a photograph. Separating material color from geometry lets the renderer predict how the window would look under different lighting.</figcaption>
+</figure>
 
 ---
 

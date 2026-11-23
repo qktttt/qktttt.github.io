@@ -8,16 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-I’m a computer science PhD student at the University of Illinois Chicago, where I work with Prof. Sidharth Kumar on high-performance computing. I study how parallel programs spend their time moving data and how to make those exchanges cheaper when the workload changes.
+I’m a PhD student in computer science at the University of Illinois Chicago, advised by Prof. Sidharth Kumar. I work on high-performance computing and distributed systems, with a focus on GPU communication and MPI collectives. I build and benchmark communication algorithms for workloads where the amount of data moving between processors changes from one iteration to the next.
 
-## Current research
+## GPU communication and query engines
 
-**GPU communication.** In a mixture-of-experts model, each token may need to reach an expert on a different GPU. My GATAv project groups small transfers headed to the same node. I benchmark the exchange on Polaris and measure its effect on expert-layer runtime on Aurora. [GATAv project](/portfolio/gpu-alltoallv/)
+I’m developing GATAv, a CUDA and SYCL implementation of variable-size all-to-all communication for GPU clusters. On Argonne’s Polaris and Aurora supercomputers, I study how GPUs can exchange the tokens that a mixture-of-experts model routes to different experts. I also integrate the collective into vLLM to measure its effect on DeepSeek-R1 decoding. [GATAv project, figures, and slides](/portfolio/gpu-alltoallv/)
 
-**MPI autotuning.** I use performance measurements to choose communication algorithms at runtime. For all-to-all exchanges, the distribution of message sizes helps predict which algorithm will be fastest. For broadcasts, the tuner also needs to know which algorithm MPICH actually ran when it collected a timing. [Non-uniform all-to-all](/portfolio/portfolio-1/) · [Broadcast in MPICH](/portfolio/mpi-broadcast/)
+My Datalog work tackles a related problem in graph and program analysis. On a GPU, I co-developed join kernels that spread the work of frequent keys across thread blocks. On a cluster, I built an MPI engine that places related records on the same rank so that multi-way joins can run locally. We evaluated the distributed engine on up to 2,048 processes. [GPU Datalog](/portfolio/gpu-datalog/) · [Distributed Datalog](/portfolio/distributed-datalog/)
 
-**Parallel Datalog.** Graph and program-analysis queries often join several relations at once. My collaborators and I study how to find the matches while keeping intermediate results small enough to fit in GPU memory and limiting the data exchanged between cluster nodes. [GPU joins](/portfolio/gpu-datalog/) · [Distributed joins](/portfolio/distributed-datalog/)
+## Research at Argonne
 
-## Background
+During my summer 2025 internship with Dr. Venkatram Vishwanath and Prof. Michael Papka, I built a C++ autotuner for non-uniform MPI all-to-all exchanges. Our work received the HiPC 2025 Distinguished Paper Award. In summer 2026, I joined Argonne’s MPICH team, working with Dr. Hui Zhou and Dr. Rajeev Thakur on a tuner that accounts for which broadcast algorithm actually executes. We presented that work at ExaMPI at SC26. [HiPC project](/portfolio/portfolio-1/) · [ExaMPI project](/portfolio/mpi-broadcast/)
 
-I earned master’s degrees in statistics and computer science at Miami University. My interests in statistical and numerical computing grew out of that work. [Pre-PhD projects](/pre-phd/) · [CV](/cv/)
+## Education
+
+I began my PhD in August 2024 and expect to finish in August 2028. At Miami University, I earned an MS in statistics (2024), an MS in computer science (2023), and a BS in computer science, cum laude (2020). [Pre-PhD projects](/pre-phd/) · [CV](/cv/)

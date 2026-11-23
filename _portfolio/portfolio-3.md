@@ -19,7 +19,7 @@ The **Datanugget** R package [2] efficiently represents large datasets while pre
 The Datanugget package reduces large datasets into a manageable number of nuggets, enabling the application of weighted statistical methods and modeling directly on the summarized data. These methods include unsupervised approaches (e.g., weighted PCA, weighted clustering) and supervised methods (e.g., generalized linear models, linear regression). 
 
 ![Data Nugget Workflow](/images/datanugget_teaser.png "Data Nugget Creation and Refinement (Adapted from [1])")  
-*The workflow involves two phases: nugget creation and refinement ([1]).* 
+*Creation assigns observations to an initial set of centers. In the right panel, the dashed lines show where refinement divides a group whose observations are too spread out for one nugget to represent well. Figure adapted from [1].*
 
 **Nugget Creation Phase**  
 The goal is to reduce a large dataset into smaller, representative units called nuggets. Each nugget summarizes a subset of the data using three properties:  

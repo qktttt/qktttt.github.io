@@ -25,7 +25,10 @@ Corn planting and harvesting schedules are essential for managing storage capaci
 This project builds on the 2021 Syngenta Crop Challenge, which asked participants to design better planting schedules for corn populations. The challenge involved predicting harvest times based on weather data and optimizing planting schedules to address storage limitations. 
 
 ## Background and Problem
-![Alt text](/images/corn_process.png)
+<figure>
+  <img src="/images/corn_process.png" alt="Planting waits for the scheduled week, and harvest waits until the population reaches its required growing degree units.">
+  <figcaption>The two decision points play different roles. The optimizer chooses a planting week within the allowed window. The weather forecast then determines when the population accumulates enough heat to harvest.</figcaption>
+</figure>
 
 A corn seed population has a specific planting window, which defines the earliest and latest dates the seeds can be planted. After planting, the seeds require a certain amount of warmth, measured in Growing Degree Units (GDUs), to fully mature. Once mature, the corn can be harvested, and each seed population produces a certain number of corn ears.
 

@@ -21,6 +21,11 @@ This visualization explores the relationship between **gender, educational attai
 
 ---
 
+<figure>
+  <img src="/images/niss_visualization.png" alt="Earnings dashboard with a year selector, an education filter, and separate lines for men and women.">
+  <figcaption>The dashboard shows median annual earnings in the selected groups. Switching to constant 2019 dollars makes it possible to compare purchasing power across years. Selecting a year reveals the gap between groups at that point.</figcaption>
+</figure>
+
 ## 2. Implementation of the Interactive Data Visualization Portal
 The portal was created using **R-shiny** and includes the following features and functionalities:
 
