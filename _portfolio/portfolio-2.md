@@ -2,6 +2,8 @@
 title: "NISS Data Visualization Contest"
 excerpt: "Create an interactive data visualization using R-Shiny for the income data in the U.S., from 1990 to 2019, under different education and gender groups.<br/><img src='/images/niss_visualization.png'>"
 collection: portfolio
+result_summary: >-
+  In 1990, median annual earnings for men exceeded those for women by **$18,310 in 2019 dollars** among full-time, year-round US workers aged 25 and older. The gap narrowed over the period studied.
 stage: pre-phd
 teammates:
 - Mingshi Cui (Rutgers University, Department of Statistics)

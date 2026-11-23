@@ -2,6 +2,8 @@
 title: "Autotuning MPI broadcast in MPICH"
 excerpt: "MPICH can silently switch broadcast algorithms or invoke another collective inside a broadcast. We traced those choices so the autotuner learns from the code that actually runs."
 collection: portfolio
+result_summary: >-
+  On Polaris, the tuner beat the default MPICH broadcast in **225 of 252 configurations**, with a geometric-mean speedup of **1.81×**.
 stage: phd
 order: 1
 ---
@@ -23,4 +25,4 @@ Forcing an algorithm by name is only the first step. We used counters to check w
 
 ## Evaluation
 
-In our Polaris benchmarks, the final policy sped up individual broadcasts by up to 30.71× over default MPICH and up to 2.76× over the ACCLAiM autotuner. [ExaMPI 2026 paper in the SC26 proceedings](https://sc26.supercomputing.org/proceedings/workshops/workshop_pages/ws_exampi107.html)
+Relative to ACCLAiM, the tuner won 207 of 252 cases, giving a geometric-mean speedup of 1.33× and a peak of 2.76×. The largest gain over default MPICH was 30.71× for a 1 MiB broadcast on 1,024 ranks, with 32 ranks per node. At 128 bytes and 64 ranks, with 16 ranks per node, the speedup was 0.80×, so the default was faster in that case. Figures 8 and 9 show the full sweep. [ExaMPI 2026 paper in the SC26 proceedings](https://sc26.supercomputing.org/proceedings/workshops/workshop_pages/ws_exampi107.html)

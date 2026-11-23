@@ -2,6 +2,8 @@
 title: "Worst-case optimal joins for Datalog on GPUs"
 excerpt: "We developed SRDatalog to evaluate multi-way joins on a GPU, where large temporary results can exhaust device memory and unevenly distributed keys can leave processors idle."
 collection: portfolio
+result_summary: >-
+  On three LSQB graph queries at scale factor 100, SRDatalog ran the in-memory joins **2.1–4.0× faster than cuMatch**. The comparison measures join time and excludes cuMatch’s partitioning step.
 stage: phd
 order: 3
 ---
@@ -22,5 +24,7 @@ Giving each thread group one key can create a long tail when a few keys have man
 </figure>
 
 ## Evaluation
+
+Figure 4 in the paper compares three GPU join workloads. On query Q7, a star-shaped pattern in the LSQB benchmark, SRDatalog completed the join in 2.17 s and cuMatch in 4.50 s. Both systems ran the query in GPU memory.
 
 On the disassembly-analysis benchmark for Z3, SRDatalog processed 126.9 million input facts in 2.00 seconds on one NVIDIA RTX 6000 Ada GPU. The same workload took 24.4 seconds in Ascent on 32 CPU cores. [April 2026 preprint, Table 2](https://arxiv.org/abs/2604.20073)

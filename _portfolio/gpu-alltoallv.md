@@ -2,6 +2,8 @@
 title: "GATAv for GPU all-to-all communication"
 excerpt: "Mixture-of-experts models send different numbers of tokens to each GPU. GATAv groups small transfers within each node to reduce the number of messages crossing the network."
 collection: portfolio
+result_summary: >-
+  On 144 Aurora GPU tiles, GATAv cut DeepSeek-R1 decode time from **1,492 to 973 ms per step** on Dolphin prompts, compared with all-gather/reduce-scatter at 32 prompts per rank.
 stage: phd
 order: 0
 ---

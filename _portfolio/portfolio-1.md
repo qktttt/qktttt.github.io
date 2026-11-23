@@ -2,6 +2,8 @@
 title: "Autotuning non-uniform MPI all-to-all communication"
 excerpt: "In a graph computation, the amount of data each process sends can change with every iteration. Our tuner uses the observed message sizes to choose how MPI exchanges that data."
 collection: portfolio
+result_summary: >-
+  On 1,024 Polaris processes, the tuner made the all-to-all exchange **6.03× faster** in a transitive-closure computation. The full application finished in **69.49 s**, down from 79.50 s with standard MPI.
 stage: phd
 order: 4
 advisor: Prof. Sidharth Kumar

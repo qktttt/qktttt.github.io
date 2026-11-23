@@ -3,6 +3,8 @@ title: "Multi-Objective Optimization for Corn Planting Scheduling"
 excerpt: "  Optimized corn planting schedules using LSTM-based GDU prediction and multi-objective genetic algorithms to minimize waste and improve harvest consistency. <br/><img src='/images/genetic algorithm.png'>
 (Figure referenced from [2])"
 collection: portfolio
+result_summary: >-
+  In the illustrated schedule, peak weekly harvest fell from **about 26,000 ears to fewer than 9,000**, bringing the busiest week closer to storage capacity. The team placed second in the 2021 Syngenta Crop Challenge.
 stage: pre-phd
 advisor: Dr. Byran Smucker, Prof. Sundaramoorthi Durai
 teammates: 

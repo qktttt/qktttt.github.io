@@ -1,9 +1,11 @@
 ---
 title: "Datanugget - Python Version"  
-excerpt: "The Python implementation of the Datanugget package, achieving at least a 500% improvement in speed and capacity compared to the original R version.<br/> 
+excerpt: "A Python implementation of data nuggets for reducing large datasets to weighted groups of similar observations.<br/>
 <img src='/images/datanugget_teaser.png'> 
 *(Figure adapted from [1])*" 
 collection: portfolio
+result_summary: >-
+  The Python implementation summarized **50 million observations with 10 variables** on a desktop with **32 GB of RAM**.
 stage: pre-phd
 advisor: "Prof. Javier Cabrera"
 ---

@@ -45,6 +45,9 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.result_summary %}
+          <div class="project-result notice--info">{{ page.result_summary | markdownify }}</div>
+        {% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl %}
