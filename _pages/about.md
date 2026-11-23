@@ -1,19 +1,23 @@
 ---
 permalink: /
-title: "Kunting Qi's Personal Website"
+title: "Kunting Qi"
+excerpt: "Computer science PhD student at the University of Illinois Chicago studying GPU communication, MPI autotuning, and parallel Datalog."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
+I’m a computer science PhD student at the University of Illinois Chicago, where I work with Prof. Sidharth Kumar on high-performance computing. I study how parallel programs spend their time moving data and how to make those exchanges cheaper when the workload changes.
 
-# About Me  
+## Current research
 
-Hi, I’m **Kunting Qi**, a Ph.D. student in **Computer Science** at the **University of Illinois Chicago**. My current research areas are on **Statistical and Numerical Computing**, **High-Performance Computing (HPC)** and **Machine Learning for Systems (ML4Sys)**.
+**GPU communication.** In a mixture-of-experts model, each token may need to reach an expert on a different GPU. My GATAv project groups small transfers headed to the same node. I benchmark the exchange on Polaris and measure its effect on expert-layer runtime on Aurora. [GATAv project](/portfolio/gpu-alltoallv/)
 
-My PhD research looks at how parallel programs move and join data. I study how MPI libraries choose communication algorithms and how Datalog engines evaluate graph and program-analysis queries on GPUs and across compute nodes. [Explore my research projects](/portfolio/).
+**MPI autotuning.** I use performance measurements to choose communication algorithms at runtime. For all-to-all exchanges, the distribution of message sizes helps predict which algorithm will be fastest. For broadcasts, the tuner also needs to know which algorithm MPICH actually ran when it collected a timing. [Non-uniform all-to-all](/portfolio/portfolio-1/) · [Broadcast in MPICH](/portfolio/mpi-broadcast/)
 
-Before my Ph.D study, I obtained strong foundations in both **Computer Science** and **Statistics** during my dual Master's degrees at **Miami University**. This unique blend of disciplines has equipped me with solid skills and knowledges to address diverse problems—from optimization to statistical modeling and data visualization.
+**Parallel Datalog.** Graph and program-analysis queries often join several relations at once. My collaborators and I study how to find the matches while keeping intermediate results small enough to fit in GPU memory and limiting the data exchanged between cluster nodes. [GPU joins](/portfolio/gpu-datalog/) · [Distributed joins](/portfolio/distributed-datalog/)
 
-Thanks for stopping by, and I look forward to connecting. Whether you’re interested in collaborating on research, discussing new ideas, or just saying hello, don’t hesitate to reach out!  
+## Background
+
+I earned master’s degrees in statistics and computer science at Miami University. My interests in statistical and numerical computing grew out of that work. [Pre-PhD projects](/pre-phd/) · [CV](/cv/)
